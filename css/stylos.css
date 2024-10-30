@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Quicksand", serif;
+}
+
+:root{
+    --red: #f46767;
+    --green: #a8a55f;
+}
+
+a, p{
+    font-size: 18px;
+    text-decoration: none;
+    color: currentColor;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 19px;
+}
+
+.raya__white{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+@media screen and (max-width: 600px){
+    a, p{
+        font-size: 15px;
+    }
+}
+
+/* HEADER */
+
+header nav img{
+    width: 200px;
+}
+
+@media screen and (max-width: 650px){
+    header nav ul li a{
+        font-size: 21px;
+    }
+}
+
+
+/* HERO */
+
+
+.hero article{
+    background-color: var(--red);
+}
+
+.hero picture{
+    display: block;
+    background-image: url(../img/bloque_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 990px){
+    .hero picture{
+        height: 60vw;
+    }
+    .hero__tt--width {
+        width: 100% !important;
+    }
+    .sobre__nosotros{
+
+        flex-direction: column-reverse !important;
+    }
+    
+}
+
+/* SOBRE NOSOTROS */
+
+.sobre__nosotros article{
+    background-color: var(--green);
+}
+
+.sobre__nosotros picture{
+    background-image: url(../img/bloque_2.jpg);
+}
+
+/*  */
+
+.proximas__clases{
+    padding: 90px 0px;
+    background-color: rgb(244, 244, 244);
+}
+
+.proximas__clases p,
+.proximas__clases span,
+.proximas__clases a{
+    font-size: 14px;
+}
+
+.proximas__clases div{
+    gap: 10px;
+}
+
+.proximas__clases article{
+    width: calc(33% - 10px);
+}
+
+.proximas__clases--red{
+    background-color: var(--red);
+}
+
+.proximas__clases--red span:nth-last-child(1){
+    background-color: var(--green);
+}
+
+.proximas__clases p:nth-child(2){
+    color: var(--red);
+}
+
+.proximas__clases a{
+    background-color: var(--red);
+}
+
+@media screen and (max-width: 990px){
+    .proximas__clases article{
+        width: 100%;
+    }
+    
+}
+
+/* QUIERES SER CHEF */
+
+.section__chef{
+    height: 100vh;
+    background-image: url(../img/chef_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section__chef a{
+    background-color: var(--red);
+}
+
+/* FOOTER */
+
+@media screen and (max-width: 990px){
+    footer p,
+    footer a{
+        font-size: 19px !important;
+    }
+}
