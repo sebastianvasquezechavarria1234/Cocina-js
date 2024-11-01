@@ -51,6 +51,15 @@ header nav img{
     }
 }
 
+header a,
+footer a{
+    transition: all .3s;
+}
+header a:hover,
+footer a:hover{
+    color: var(--red);
+}
+
 
 /* HERO */
 
